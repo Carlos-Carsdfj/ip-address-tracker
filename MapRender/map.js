@@ -26,7 +26,7 @@ export async function renderMap(){
         iconSize: [46, 56], // size of the icon
         iconAnchor: [30, 56], // point of the icon which will correspond to marker's location
       });
-      L.marker([40.72516,-74.06852], { icon: icon }).addTo(map);
+      L.marker([34.05223,-118.24368], { icon: icon }).addTo(map);
     const baseMaps = {
         "Satellite": sattelite,
         "Streets": streets
