@@ -12,7 +12,7 @@ const mapboxAttribution =  'Map data &copy; <a href="https://www.openstreetmap.o
     const sattelite   = L.tileLayer(mapboxUrl, {id: MapSatellite, tileSize: 512, zoomOffset: -1, attribution: mapboxAttribution, accessToken: accessToken});
     let map, icon;
     
-export async function renderMap(){
+export async function renderMap(url){
      map = L.map('mapid', {
         center: [
             34.05223,-118.24368],
@@ -22,7 +22,7 @@ export async function renderMap(){
 
     icon = L.icon({
         
-        iconUrl: "../resource/images/icon-location.svg",
+        iconUrl:url,
         iconSize: [46, 56], // size of the icon
         iconAnchor: [30, 56], // point of the icon which will correspond to marker's location
       });
