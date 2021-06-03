@@ -23,7 +23,7 @@ timeZone2.textContent ='-07:00'
 isp2.textContent = 'Google LLC'
 
 
-renderMap()
+renderMap("./resource/images/icon-location.svg")
 
 form.addEventListener('submit',(ev)=>{
     ev.preventDefault()
